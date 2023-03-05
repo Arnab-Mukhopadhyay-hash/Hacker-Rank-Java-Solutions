@@ -1,0 +1,1 @@
+1. comment on static_blocks.java on static initilization blocks.
