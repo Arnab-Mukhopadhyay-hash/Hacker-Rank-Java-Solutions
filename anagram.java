@@ -26,21 +26,30 @@ public class anagram {
         if (a.length() != b.length())
             return false;
         else {
+            // temporary string
             String s = "";
+            // looping through each character of string 1.
             for (int i = 0; i < a.length(); i++) {
                 char c = a.charAt(i);
+                // checking if the character has already been visited or not, if visited then we
+                // skip the character, or else we continue with further steps.
                 if (s.indexOf(c) >= 0)
                     continue;
                 else {
+                    // add the character to the temporary string
                     s = s + c;
                     int count_a = 0;
                     int count_b = 0;
+                    // we count the number of occurrences of the character in both the input
+                    // strings.
                     for (int j = 0; j < b.length(); j++) {
                         if (b.charAt(j) == c)
                             count_b++;
                         if (a.charAt(j) == c)
                             count_a++;
                     }
+                    // if the no.of occurrences of the characters are same in both the strings then
+                    // we continue, or else we break there since it's not an anagram.
                     if (count_a == count_b)
                         continue;
                     else
