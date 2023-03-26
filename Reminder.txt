@@ -1,2 +1,3 @@
 1. comment on static_blocks.java on static initilization blocks.
 2. in palindrom.java try to find out other methods of string reversal and there complexities.
+3. add another program for anagram.java, a rather optimized and shorter one.
